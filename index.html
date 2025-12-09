@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Firebase Chat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatroom</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Chatroom</h1>
+
+  <header>
+      <h1>Chatroom</h1>
+  </header>
 
   <div id="messages"></div>
 
-  <input id="messageInput" placeholder="Typ een bericht..." autocomplete="off">
-  <button id="sendBtn">Verstuur</button>
+  <div class="input">
+    <input id="messageInput" placeholder="Typ een bericht..." autocomplete="off">
+    <button id="sendBtn">Verstuur</button>
+  </div>
 
   <script type="module" src="chat.js"></script>
 </body>
