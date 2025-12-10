@@ -43,10 +43,6 @@ onChildAdded(messagesRef, (data) => {
   div.appendChild(p);
 });
 
-// MENU SYSTEM
-const themeMenu = document.getElementById("themeMenu");
-const settingsMenu = document.getElementById("settingsMenu");
-
 document.getElementById("themeBtn").onclick = () => {
   themeMenu.classList.remove("hidden");
 };

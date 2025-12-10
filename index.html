@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chatroom</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
   <header>
-    <button id="themeBtn">🎨</button>
+    <button>🎨</button>
     <h1>Chatroom</h1>
-    <button id="settingsBtn">⚙️</button>
+    <button>⚙️</button>
   </header>
 
   <div id="messages"></div>
@@ -21,37 +21,6 @@
     <button id="sendBtn">Verstuur</button>
   </div>
 
-  <!-- THEME MENU -->
-  <div id="themeMenu" class="menu hidden">
-    <h2>Theme</h2>
-    <button class="closeBtn">X</button>
-
-    <div class="menu-content">
-      <p>Kies een theme:</p>
-      <button class="themeOption" data-theme="light">☀️ Light</button>
-      <button class="themeOption" data-theme="dark">🌙 Dark</button>
-      <button class="themeOption" data-theme="custom">🎨 Custom (later)</button>
-    </div>
-  </div>
-
-  <!-- SETTINGS MENU -->
-  <div id="settingsMenu" class="menu hidden">
-    <h2>Settings</h2>
-    <button class="closeBtn">X</button>
-
-    <div class="menu-content">
-      <label>Username:</label>
-      <input id="usernameInput" type="text">
-
-      <label>Kleur:</label>
-      <input id="userColorInput" type="color">
-
-      <p>(profile picture en meer komen later)</p>
-
-      <button id="saveSettings">Opslaan</button>
-    </div>
-  </div>
-
-  <script type="module" src="chat.js"></script>
+  <script type="module" src="scripts/chat.js"></script>
 </body>
 </html>
