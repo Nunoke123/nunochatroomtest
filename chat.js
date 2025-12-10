@@ -42,3 +42,23 @@ onChildAdded(messagesRef, (data) => {
 
   div.appendChild(p);
 });
+
+// MENU SYSTEM
+const themeMenu = document.getElementById("themeMenu");
+const settingsMenu = document.getElementById("settingsMenu");
+
+document.getElementById("themeBtn").onclick = () => {
+  themeMenu.classList.remove("hidden");
+};
+
+document.getElementById("settingsBtn").onclick = () => {
+  settingsMenu.classList.remove("hidden");
+};
+
+// Alle X-knoppen sluiten menu's
+document.querySelectorAll(".closeBtn").forEach(btn => {
+  btn.onclick = () => {
+    themeMenu.classList.add("hidden");
+    settingsMenu.classList.add("hidden");
+  };
+});
