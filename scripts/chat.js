@@ -23,10 +23,14 @@ document.getElementById("sendBtn").onclick = () => {
   const text = document.getElementById("messageInput").value;
 
   if (text.trim() !== "") {
-    push(messagesRef, {
-      text: text,
-      timestamp: Date.now()
-    });
+    const username = localStorage.getItem("username") || "Anoniem";
+
+push(messagesRef, {
+  username: username,
+  text: text,
+  timestamp: Date.now()
+});
+
   }
 
   document.getElementById("messageInput").value = "";
