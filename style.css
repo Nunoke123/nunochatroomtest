@@ -46,11 +46,6 @@ button {
   width: 5svw;
 }
 
-.header-buttons {
-  display: flex;
-  gap: 10px;
-}
-
 header button {
   background: white;
   border: none;
