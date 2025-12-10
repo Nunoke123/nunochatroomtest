@@ -42,7 +42,13 @@ onChildAdded(messagesRef, (data) => {
   const div = document.getElementById("messages");
 
   const p = document.createElement("p");
-  p.textContent = message.text;
 
-  div.appendChild(p);
+const time = new Date(message.timestamp);
+const hh = time.getHours().toString().padStart(2, "0");
+const mm = time.getMinutes().toString().padStart(2, "0");
+const formattedTime = `${hh}:${mm}`;
+
+p.innerHTML = `<strong>${message.username}</strong> <span style="opacity:0.6;font-size:12px;">${formattedTime}</span><br>${message.text}`;
+
+div.appendChild(p);
 });
