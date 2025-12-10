@@ -42,19 +42,3 @@ onChildAdded(messagesRef, (data) => {
 
   div.appendChild(p);
 });
-
-document.getElementById("themeBtn").onclick = () => {
-  themeMenu.classList.remove("hidden");
-};
-
-document.getElementById("settingsBtn").onclick = () => {
-  settingsMenu.classList.remove("hidden");
-};
-
-// Alle X-knoppen sluiten menu's
-document.querySelectorAll(".closeBtn").forEach(btn => {
-  btn.onclick = () => {
-    themeMenu.classList.add("hidden");
-    settingsMenu.classList.add("hidden");
-  };
-});
